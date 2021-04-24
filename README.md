@@ -7,3 +7,6 @@ This R package takes a linear dataset from a standard test and then graphs it be
 The goal of this was to automate a process done in labs in a way that a physical test can be done and data given from the machine reading these tests could be given to R in a standardized format.  This package could then be run and all necessary analysis could be done without human interaction.
 
 Then, through the use of a markdown file, a printout could be made which gives researchers in this lab only the necessary information almost instantly after the test is done.
+
+
+After installing the package, users should just be able to run bradfordassay::BradfordAssay() and all the work should be done by the machine.
