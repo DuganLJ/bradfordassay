@@ -22,7 +22,7 @@ BradfordAssay <- function(){
 
   #These lines give us a graph of our known absorbance values and predicted protein concentrations
   plot(UNKNOWNCONCENTRATION, UNKNOWNS$absorbance,
-       main = "UnknownProtein Concentration vs. Absorbance (750 nm)",
+       main = "Unknown Protein Concentration vs. Absorbance (750 nm)",
        xlab = "Predicted Protein Concentration (mg/ml)",
        ylab = "Absorbance (750 nm")
   abline(lm(STANDARD$absorbance ~ STANDARD$concentration), col = "red")
