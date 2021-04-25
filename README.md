@@ -10,3 +10,6 @@ Then, through the use of a markdown file, a printout could be made which gives r
 
 
 After installing the package, users should just be able to run bradfordassay::BradfordAssay() and all the work should be done by the machine.
+
+
+You may or may not need to go to the folder where the package is saved and change the name of the RData to ".RData" to get it working properly.
