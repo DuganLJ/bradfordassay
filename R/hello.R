@@ -18,16 +18,16 @@ BradfordAssay <- function(){
     }
 
   #This line runs our unknown values through the function we previously created and adds them to a list
-  UNKNOWNCONCENTRATION <- c(predictconcentration(UNKNOWNSAMPLES))
+  UNKNOWNCONCENTRATION <- c(predictconcentration(UNKNOWNS$absorbance))
 
   #These lines give us a graph of our known absorbance values and predicted protein concentrations
-  plot(UNKNOWNCONCENTRATION, UNKNOWNSAMPLES,
+  plot(UNKNOWNCONCENTRATION, UNKNOWNS$absorbance,
        main = "UnknownProtein Concentration vs. Absorbance (750 nm)",
        xlab = "Predicted Protein Concentration (mg/ml)",
        ylab = "Absorbance (750 nm")
   abline(lm(STANDARD$absorbance ~ STANDARD$concentration), col = "red")
 
   #This provides us with a dataframe of our samples with both the absorbance and predicted concentration values.
-  cbind(data.frame(UNKNOWNSAMPLES), data.frame(UNKNOWNCONCENTRATION))
+  cbind(data.frame(UNKNOWNS$absorbance), data.frame(UNKNOWNCONCENTRATION))
 
 }
